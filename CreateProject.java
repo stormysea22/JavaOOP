@@ -1,10 +1,11 @@
+
 public class CreateProject {
     private String name;
     private String description;
-    private Double cost;
+    private double cost;
 
-    public String elevatorPitch() {
-        return (this.getName() + "($" + Double.toString(getCost()) + ")" + " : " + this.getDescription());
+    public void elevatorPitch() {
+        System.out.println(name + " (" + cost + "): " + description);
     }
 
     // constructors
@@ -16,21 +17,21 @@ public class CreateProject {
     }
 
     public void ProjectCreate(String projectName) {
-        this.name = "";
+        this.name = projectName;
         this.description = "";
         this.cost = 0.00;
     }
 
     public void ProjectCreate(String projectName, String projectDescription) {
-        this.name = "";
-        this.description = "";
+        this.name = projectName;
+        this.description = projectDescription;
         this.cost = 0.00;
     }
 
-    public void ProjectCreate(String ProjectName, String projectDescription, Double projectCost) {
-        this.name = "";
-        this.description = "";
-        this.cost = 0.00;
+    public void ProjectCreate(String projectName, String projectDescription, double projectCost) {
+        this.name = projectName;
+        this.description = projectDescription;
+        this.cost = projectCost;
     }
 
     // 
@@ -42,7 +43,7 @@ public class CreateProject {
         this.description = newDescription;
     }
 
-    public void setCost(Double newCost) {
+    public void setCost(double newCost) {
         this.cost = newCost;
     }
 
@@ -56,7 +57,7 @@ public class CreateProject {
         return (description);
     }
 
-    public Double getCost() {
+    public double getCost() {
         return (cost);
     }
 }
