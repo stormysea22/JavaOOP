@@ -1,4 +1,4 @@
-package ListAssignment;
+
 
 public class SinglyLinkedList {
     public Node head;

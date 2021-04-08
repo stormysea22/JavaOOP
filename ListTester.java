@@ -1,4 +1,4 @@
-package ListAssignment;
+
 
 public class ListTester {
     public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class ListTester {
         sll.add(15);
         sll.add(2);
         sll.remove();
-        sll.remove();
+        sll.removeAt(0);
         sll.printValues();
     }
 }
